@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid-container {
+            display: grid;
+            grid-template-columns: 50% auto 50px;
+            background-color: bisque;
+            gap: 30px;
+
+        }
+        #grid-container >div {
+            padding: 20px;
+            background-color: blueviolet;
+            /* margin: 10px; */
+        }
+        #div1 {
+            grid-column-start: 1;
+            grid-column-end: 3;   
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+        <div id="div6">6</div>
+    </div>
+</body>
+</html>

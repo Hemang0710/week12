@@ -1,0 +1,53 @@
+#container {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 10%  auto 10%;
+    grid-template-areas:
+      "hender hender"
+      "navigation main"
+      "aside footer";
+    gap: 10px;
+    height: 100vh;
+  }
+  
+  header, nav, main, aside, footer {
+    padding: 20px;
+    background-color: rgb(57, 104, 126);
+    color: rgb(162, 195, 225);
+    text-align: center;
+    font-size: larger;
+  }
+  
+  #hender {
+    grid-area: hender;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  
+  #navigation {
+    grid-area: navigation;
+    
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  #main {
+    grid-area: main;
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  #aside {
+    grid-area: aside;
+    
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  
+  #footer {
+    grid-area: footer;
+    
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }

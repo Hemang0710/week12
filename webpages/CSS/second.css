@@ -1,0 +1,54 @@
+#container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% auto 10% 10%;
+    grid-template-areas:
+        "header"
+        "navigation"
+        " main"
+        "aside"
+        " footer";
+    gap: 10px;
+    height: 100%;
+  }
+  
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: larger;
+  }
+  
+  #hender {
+    grid-area: header;
+    grid-row: 1/2;
+  }
+  
+  #navigation {
+    grid-area: navigation;
+  
+    grid-row: 2/3;
+  }
+  
+  #main {
+    grid-area: main;
+  
+    grid-row: 3/4;
+  }
+  
+  #aside {
+    grid-area: aside;
+  
+    grid-row: 4/5;
+  }
+  
+  #footer {
+    grid-area: footer;
+  
+    grid-row: 5/6;
+  }
